@@ -6,8 +6,8 @@ from rest_framework import generics
 from rest_framework.decorators import api_view,permission_classes
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-from app.fitness.models import Activity
-from app.fitness.serializer import ActivitySerializer
+from .models import Activity
+from .serializer import ActivitySerializer
 
 
 class ActivityCreate(generics.CreateAPIView):

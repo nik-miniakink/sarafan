@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from app.fitness.models import Activity
+from .models import Activity
 
 
 class ActivitySerializer(serializers.ModelSerializer):
