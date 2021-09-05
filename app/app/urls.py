@@ -6,7 +6,6 @@ from drf_yasg import openapi
 from rest_framework import permissions
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('djoser.urls')),

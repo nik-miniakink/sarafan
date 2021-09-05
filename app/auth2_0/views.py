@@ -9,6 +9,7 @@ import requests
 def request_user_activation(request, uid, token):
     """
     Активирует акаунт пользователя по ссылке, отправленной на email
+    Ловит GET запрос, забирает uid и token, и отправляет POST запрос на активацию
     """
     post_url = "http://127.0.0.1:8000/auth/users/activation/"
     post_data = {"uid": uid, "token": token}
